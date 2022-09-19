@@ -19,7 +19,6 @@ h1 {
 .title{
     font-size: 36px;
     padding: 10px;
-    text-align: center;
     color:#fff;
 }
 a{
@@ -42,7 +41,7 @@ img{
     height: 100px;
     float:left;
     padding-top: -10px;
-    margin-left: 35%;
+    margin-left: 20%;
 }
 .navigation{
     margin-top: 20px;
