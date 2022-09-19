@@ -1,106 +1,168 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<html lang="ru">
+<html lang="en">
     <head>
         <title>
             Web-development
         </title>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <article id="Beg"></article>
-        <h1>
-            Первое задание по Web-development
-        </h1>
+        <a id="Beg"></a>
+        <header class="header">
+            <div class="title">Первое задание по Web-development
+                <img src="my_logo.png" class="logo" alt="Логотип моего проекта">
+            </div>
+        </header>
+        <nav class="navigation">
+            <p>Список ссылок основной навигации сайта</p>
+                <a href="#Beg" title="Перейти в начало текущего сайта">В начало текущего сайта</a>
+                <a href="#image" title="Перейти к изображению">К изображению</a>
+                <a href="#Form" title="Перейти к разделу 'Формы'">К разделу 'Формы'</a>
+        </nav>
+        <div class="kontent">
         <ol>
             <li>
-                <a href="http://example.com/"target="_blank">Aбсолютнaя гиперссылка на главную страницу сайта example.com</a>
+                <a href="http://example.com/" target="_blank">Aбсолютнaя гиперссылка на главную страницу сайта example.com</a>
             </li>
             <li>
-                <a href="https://example.com/"target="_blank">Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a>
+                <a href="https://example.com/" target="_blank">Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a>
             </li>
             <li>
-                <a href="ftp://ftp.ubisoft.com/"target="_blank">Ссылка на файл на сервере FTP без авторизации</a>
+                <a href="ftp://ftp.ubisoft.com/" target="_blank">Ссылка на файл на сервере FTP без авторизации</a>
             </li>
             <li>
-                <a href="ftp://user:password@adress/file.txt"target="_blank">Ссылка на файл на сервере FTP с авторизацией</a>
+                <a href="ftp://user:password@adress/file.txt" target="_blank">Ссылка на файл на сервере FTP с авторизацией</a>
             </li>
             <li>
-                <a href="https://kubsu.ru/ru/university#main-content"target="_blank">Ссылка на фрагмент страницы некоторого сайта</a
+                <a href="https://kubsu.ru/ru/university#main-content" target="_blank">Ссылка на фрагмент страницы некоторого сайта</a>
             </li>
             <li>
                 <a href="#Form">Ссылка на фрагмент (в данном случае на раздел с формой) текущего сайта</a>
             </li>
             <li>
-                <a href="https://yandex.ru/search/?text=lokobasket&lr=35"target="_blank">Ссылка с двумя параметрами в URL</a>
-            </li>
-            <li>
-                <p>Список ссылок основной навигации сайта</p>
-                <ul>
-                <li>
-                    <a href="#Beg"title="Перейти в начало текущего сайта">Перейти в начало текущего сайта</a>
-                </li>
-                <li>
-                <a href="#image"title="Перейти к изображению">Перейти к изображению</a>
-                </li>
-                <li>
-                <a href="#Form"title="Перейти к разделу 'Формы'">Перейти к разделу 'Формы'</a>
-                </li>
-                </ul>
+                <a href="https://yandex.ru/search/?text=lokobasket&lr=35" target="_blank">Ссылка с двумя параметрами в URL</a>
             </li>
             <li>
                 <a>Ссылка без href</a>
             </li>
             <li>
-                <a href=""target="_blank">Ссылка с пустым href</a>
+                <a href="" target="_blank">Ссылка с пустым href</a>
             </li>
             <li>
-                <a href="https://example.com/" rel="nofollow"target="_blank"> Ссылка, запрещенная для индексации поисковиками</a>
+                <a href="https://example.com/" rel="nofollow" target="_blank"> Ссылка, запрещенная для индексации поисковиками</a>
             </li>
             <!--noindex-->
                 <li>
-                    <a href="https://example.com/"target="_blank"> Ссылка, запрещенная для индексации поисковиками</a>
+                    <a href="https://example.com/" target="_blank"> Ссылка, запрещенная для индексации поисковиками</a>
                 </li>
             <!--/noindex-->
             <li>
-                <p>Благодаря <a href="https://www.championat.com"target="_blank">Чемпионату</a> можно узнавать результаты спортивных событий </p>
+                <p>Благодаря <a href="https://www.championat.com" target="_blank">Чемпионату</a> можно узнавать результаты спортивных событий </p>
             </li>
             <li>
-                <article id="image"></article>
-                <a href="https://lokobasket.com"target="_blank" id="Image"><img src="logo_loko.png" alt="Логотип Локо" style="width:200px;"></a>
+                <a id="image"></a>
+                <a href="https://lokobasket.com" target="_blank" id="Image"><img src="logo_loko.png" alt="Логотип Локо" ></a>
             </li>
             <li>
                 <map name="figure">
-                    <area shape="rect" coords="10, 20, 100, 280" href="https://www.fcbarcelona.com/en/" alt="прямоугольник">
-                    <area shape="circle" coords="150, 130, 100" href="https://www.realmadrid.com/en" alt="круг">
+                    <area shape="rect" coords="10,20,100,280" href="https://www.fcbarcelona.com/en/" alt="прямоугольник">
+                    <area shape="circle" coords="150,130,100" href="https://www.realmadrid.com/en" alt="круг">
                 </map>
                 <img src="Безымянный.png" usemap=#figure alt="фигуры" style="width:200px;">
             </li>
             <li>
-                <a href="cur.html"target="_blank">Относительная ссылка на страницу в текущем каталоге</a>
+                <a href="cur.html" target="_blank">Относительная ссылка на страницу в текущем каталоге</a>
             </li>
             <li>
-                <a href="about/about.html"target="_blank">Относительная ссылка на страницу в каталоге about</a>
+                <a href="about/about.html" target="_blank">Относительная ссылка на страницу в каталоге about</a>
             </li>
             <li>
-                <a href="../1up.html"target="_blank">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+                <a href="../1up.html" target="_blank">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
             </li>
             <li>
-                <a href="../../2up.html"target="_blank">Относительная ссылка на страницу в каталоге с двумя уровнями выше текущего</a>
+                <a href="../../2up.html" target="_blank">Относительная ссылка на страницу в каталоге с двумя уровнями выше текущего</a>
             </li>
             <li>
-                <a href="index.html"target="_blank">Сокращённая ссылка на главную</a>
+                <a href="index.html" target="_blank">Сокращённая ссылка на главную</a>
             </li>
             <li>
-                <a href="about/inner.html"target="_blank">Сокращённая ссылка на внутреннюю</a>
+                <a href="about/inner.html" target="_blank">Сокращённая ссылка на внутреннюю</a>
             </li>
         </ol>
-        <article id="Form"></article>
-        <h2>Форма HTML</h2>
-        <form action="/"method="POST">
+        </div>
+        <div class="table">
+            <h2>
+                Таблица
+            </h2>
+            <table>
+                <tr>
+                    <td colspan="3">Сравнение трофеев Реала и Барселоны</td>
+                </tr>
+                <tr>
+                    <th>
+                        Турнир
+                    </th>
+                    <th>
+                        Реал
+                    </th>
+                    <th>
+                        Барселона
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Чемпионат Испании 
+                    </th>
+                    <th>
+                        35
+                    </th>
+                    <th>
+                        26
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Кубок Короля
+                    </th>
+                    <th>
+                        19
+                    </th>
+                    <th>
+                        31
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Лига чемпионов
+                    </th>
+                    <th>
+                        14
+                    </th>
+                    <th>
+                        5
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Суперкубок Испании
+                    </th>
+                    <th>
+                        12
+                    </th>
+                    <th>
+                        13
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <a id="Form"></a>
+        <div class="form">
+        <form action="/" method="POST">
+            <h2>Форма HTML</h2>
             <label>
                 Введите имя пользователя:<br />
                 <input name="field-name-1"
-                type="name"
+                type="text"
                 placeholder="Имя пользователя:">
             </label> <br />
             <label>
@@ -113,7 +175,7 @@
                 Введите дату рождения:<br />
                 <input name="field-date"
                  value="2000-01-01"
-                 type="date"
+                 type="date">
             </label><br />
             Укажите пол:<br />
             <label>
@@ -135,11 +197,11 @@
             </label>
             <label>
                 <input type="radio" name="radio-group-2" value="count5"/> 5+
-            </label><br / >
+            </label><br />
             <label>
                 Выберите желаемую сверхспособность: <br />
                 <select name="field-sup" multiple="multiple">
-                    <option value="num1" selected="selecred"> Бессмертие</option>
+                    <option value="num1" selected="selected"> Бессмертие</option>
                     <option value="num2" > Режим призрака</option>
                     <option value="num3" > Левитация</option>
                 </select>
@@ -147,12 +209,18 @@
             <label>
                 Напишите свою историю: <br />
                 <textarea name="field-bio" placeholder="Мы должны узнать больше про нашего героя"></textarea>
-            </label> <br / >
+            </label> <br />
             <label>
                 Чекбокс: <br />
                 <input type="checkbox" name="chtck"> С контрактом ознакомлен(а)
             </label> <br />
             <input type="submit" value="Отправить"/>
         </form>
+        </div>
+        <footer class="footer">
+            <p>
+                Nikita Gordievskiy © 2022
+            </p>
+        </footer>
     </body>
 </html>
