@@ -38,6 +38,7 @@ img{
     margin-left: 665px;
 }
 .navigation{
+    display: flex;
     flex-direction: column;
     margin-top: 20px;
     margin-left: auto;
@@ -63,6 +64,7 @@ img{
     font-size: large;
 }
 .kontent{
+    display: flex;
     flex-direction: column;
     margin-top: 20px;
     margin-left: auto;
@@ -79,6 +81,7 @@ img{
     padding-bottom: 10px;
 }
 .form{
+    display: flex;
     order: 1;
     margin-top: 20px;
     margin-left: auto;
@@ -91,6 +94,7 @@ img{
     padding-bottom: 10px;
 }
 .table{
+    display: flex;
     order: 2;
     margin-top: 20px;
     margin-left: auto;
