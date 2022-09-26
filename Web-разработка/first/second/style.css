@@ -5,7 +5,8 @@ body{
     background-color: #4c91b9;
     font-size: 24px;
 }
-.header{
+header{
+    display: flex;
     background: #659DBD ;
     width: 100%;
     height: 60px;
@@ -30,18 +31,15 @@ img{
     max-width: 250px;
 }
 .logo{
-    display: flex;
-    margin-top: -30px;
     width: 100px;
-    height: 100px;
-    float:left;
-    margin-left: 665px;
+    float: left;
+    margin-bottom: 0px;
+    text-align: left;
 }
 .navigation{
+    flex: 1;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    max-width: 100%;
     padding-top: 2px;
     padding-bottom: 10px;
     background: #DAAD86;
@@ -49,23 +47,25 @@ img{
     border-radius: 20px;
     border: 1px solid black;
 }
-.navigation a{
-    padding: 40px;
+.ssnav{
+    display: flex;
+    flex-direction: column;
+}
+.flex-item{
+    flex: 1;
 }
 .footer{
     padding-left: 20px;
     margin-top: 30px;
     height: 60px;
     background: #659DBD;
-    width: 100%;
+    max-width: 100%;
     padding-top: 30px;
     font-size: large;
 }
 .kontent{
-    flex-direction: column;
+    flex: 1;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     text-align: center;
     background: #DAAD86;
@@ -78,10 +78,8 @@ img{
     padding-bottom: 10px;
 }
 .form{
-    order: 1;
+    flex: 1;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     text-align: center;
     background: #DAAD86;
@@ -90,10 +88,9 @@ img{
     padding-bottom: 10px;
 }
 .table{
-    order: 2;
+    order: 1;
+    flex: 1;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     text-align: center;
     background: #DAAD86;
@@ -113,112 +110,85 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
     background-color: #BC986A;
 }
-
-@media (min-width: 900px){
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        color: #fff;
-        background-color: #4c91b9;
-        font-size: 24px;
-    }
-    .header{
-        background: #659DBD ;
-        width: 100%;
-        height: 60px;
-        padding: 40px;
-    }
-    .title{
-        font-size: 36px;
-        padding: 10px;
-        color:#fff;
-    }
-    a{
-        text-decoration: none;
-        font-size: 24px;
-        color: white;
-    }
-    a:hover {
-        text-decoration: underline;
-        color: black;
-    }
-    img{
-        width: 100%;
-        max-width: 250px;
-    }
-    .logo{
-        display: flex;
-        margin-top: -30px;
-        width: 100px;
-        height: 100px;
-        float:left;
-        margin-left: 665px;
-    }
-    .navigation{
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 960px;
-        padding-top: 2px;
-        padding-bottom: 10px;
-        background: #DAAD86;
-        text-align: center;
-        border-radius: 20px;
-        border: 1px solid black;
-    }
-    .navigation a{
-        padding: 40px;
-    }
-    .footer{
-        padding-left: 20px;
-        margin-top: 30px;
-        height: 60px;
-        background: #659DBD;
-        width: 100%;
-        padding-top: 30px;
-        font-size: large;
-    }
-    .kontent{
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 960px;
-        text-align: center;
-        background: #DAAD86;
-        border-radius: 20px;
-        border: 1px solid black;
-    }
-    .kontent li{
-        margin-left: 4px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .form{
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 960px;
-        text-align: center;
-        background: #DAAD86;
-        border-radius: 20px;
-        border: 1px solid black;
-        padding-bottom: 10px;
-    }
-    .table{
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 960px;
-        text-align: center;
-        background: #DAAD86;
-        border-radius: 20px;
-        border: 1px solid black;
-    }
-    table{
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        text-align: center;
-        padding-bottom: 20px;
-    }
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 900px) {
+header{
+    display: flex;
+    flex: 1;
+    height: 60px;
+    padding: 40px;
+}
+.title{
+    font-size: 36px;
+    padding: 10px;
+    color:#fff;
+}
+img{
+    width: 100%;
+    max-width: 250px;
+}
+.logo{
+    width: 120px;
+    float:left;
+    margin-bottom: 0px;
+    text-align: left;
+}
+.navigation{
+    flex: 1;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+.ssnav{
+    display: flex;
+    flex-direction: row;
+}
+.flex-item{
+    flex: 1;
+}
+.footer{
+    padding-left: 20px;
+    margin-top: 30px;
+    height: 60px;
+    padding-top: 30px;
+    font-size: large;
+}
+.kontent{
+    flex: 1;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+.kontent li{
+    margin-left: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form{
+    flex: 1;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding-bottom: 10px;
+}
+.table{
+    order: 0;
+    flex: 1;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
 }
