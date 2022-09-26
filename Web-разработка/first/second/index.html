@@ -4,7 +4,9 @@
         <title>
             Web-development
         </title>
-        <link rel="stylesheet" href="style.css">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <a id="Beg"></a>
@@ -13,11 +15,14 @@
                 <img src="my_logo.png" class="logo" alt="Логотип моего проекта">
             </div>
         </header>
+        <div class="flex-container">
         <nav class="navigation">
             <p>Список ссылок основной навигации сайта</p>
-                <a href="#Beg" title="Перейти в начало текущего сайта">В начало текущего сайта</a>
-                <a href="#image" title="Перейти к изображению">К изображению</a>
-                <a href="#Form" title="Перейти к разделу 'Формы'">К разделу 'Формы'</a>
+            <div class="ssnav">
+                <div class="flex-item"><a href="#Beg" title="Перейти в начало текущего сайта">В начало текущего сайта</a></div>
+                <div class="flex-item"><a href="#image" title="Перейти к изображению">К изображению</a></div>
+                <div class="flex-item"><a href="#Form" title="Перейти к разделу 'Формы'">К разделу 'Формы'</a></div>
+            </div>
         </nav>
         <div class="kontent">
         <ol>
@@ -216,6 +221,7 @@
             </label> <br />
             <input type="submit" value="Отправить"/>
         </form>
+        </div>
         </div>
         <footer class="footer">
             <p>
