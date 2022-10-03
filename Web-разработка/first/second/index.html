@@ -6,24 +6,28 @@
         </title>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <a id="Beg"></a>
-        <header class="header">
-            <div class="title">
-                <img src="my_logo.png" class="logo" alt="Логотип моего проекта">
-                <h1>Первое задание по Web-development</h1>
-            </div>
-        </header>
-        <div class="flex-container">
-        <nav class="navigation">
-            <p>Список ссылок основной навигации сайта</p>
+        <div class="container m-auto">
+            <header class="p-1 text-center">
+                <img src="my_logo.png" class="logo float-left" alt="Логотип моего проекта">
+                <h1 class="mt-0 pt-3 pt-lg-5">Четвёртое задание по Web-development</h1>
+            </header>
+        </div>
+        <div class="container">
+        <nav class="d-flex flex-row">
+            <div class="navigation col-md-12 px-md-5 mx-auto my-2">
+                <div class="d-flex flex-column flex-md-row p-2 justify-content-between">
                 <a href="#Beg" title="Перейти в начало текущего сайта">В начало текущего сайта</a>
                 <a href="#image" title="Перейти к изображению">К изображению</a>
                 <a href="#Form" title="Перейти к разделу 'Формы'">К разделу 'Формы'</a>
+            </div>
+            </div>
         </nav>
-        <div class="kontent">
+        <div class="kontent d-flex flex-column mx-auto my-2 text-center">
         <ol>
             <li>
                 <a href="http://example.com/" target="_blank">Aбсолютнaя гиперссылка на главную страницу сайта example.com</a>
@@ -94,11 +98,12 @@
             </li>
         </ol>
         </div>
-        <div class="table">
+        <div class="d-flex flex-column-reverse flex-sm-column">
+        <div class="table my-2 text-center">
             <h2>
                 Таблица
             </h2>
-            <table>
+            <table class="table mw-100">
                 <tr>
                     <td colspan="3">Сравнение трофеев Реала и Барселоны</td>
                 </tr>
@@ -160,7 +165,7 @@
             </table>
         </div>
         <a id="Form"></a>
-        <div class="form">
+        <div class="form my-2 text-center pb-2">
         <form action="/" method="POST">
             <h2>Форма HTML</h2>
             <label>
@@ -225,7 +230,8 @@
         </form>
         </div>
         </div>
-        <footer class="footer">
+        </div>
+        <footer class="footer pl-5 pt-3 mw-100 mt-2">
             <p>
                 Nikita Gordievskiy © 2022
             </p>
