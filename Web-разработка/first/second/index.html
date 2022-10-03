@@ -166,12 +166,14 @@
             <label>
                 Введите имя пользователя:<br />
                 <input name="field-name-1"
+                required="required"
                 type="text"
                 placeholder="Имя пользователя:">
             </label> <br />
             <label>
                 Текстовое поле email:<br />
                 <input name="field-email"
+                  required="required"
                   type="email"
                   placeholder="Введите вашу электронную почту" />
             </label><br />
@@ -179,6 +181,7 @@
                 Введите дату рождения:<br />
                 <input name="field-date"
                  value="2000-01-01"
+                 required="required"
                  type="date">
             </label><br />
             Укажите пол:<br />
@@ -212,11 +215,11 @@
             </label> <br />
             <label>
                 Напишите свою историю: <br />
-                <textarea name="field-bio" placeholder="Мы должны узнать больше про нашего героя"></textarea>
+                <textarea name="field-bio" placeholder="Мы должны узнать больше про нашего героя" required="required"></textarea>
             </label> <br />
             <label>
                 Чекбокс: <br />
-                <input type="checkbox" name="chtck"> С контрактом ознакомлен(а)
+                <input type="checkbox" name="chtck" required="required"> С контрактом ознакомлен(а)
             </label> <br />
             <input type="submit" value="Отправить"/>
         </form>
