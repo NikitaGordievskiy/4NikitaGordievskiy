@@ -22,6 +22,11 @@ a:hover {
     text-decoration: underline;
     color: black;
 }
+.calc{
+    background: #DAAD86;
+    border-radius: 20px;
+    border: 1px solid black;
+}
 img{
     width: 100%;
     max-width: 250px;
