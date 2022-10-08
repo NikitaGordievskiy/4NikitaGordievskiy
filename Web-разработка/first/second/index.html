@@ -18,6 +18,18 @@
             </header>
         </div>
         <div class="container">
+            <div class="calc my-2 text-center col-md-12">
+                <h2>Калькулятор стоимости заказа</h2>
+                <form>
+                    <label><input name="kol-vo" type="text" placeholder="Введите количество товара"></label><br />
+                    <label><input name="price" type="text" placeholder="Введите цену за единицу товара"></label><br />
+                    <label>
+                        <input type="checkbox" id="delivery"> Необходима доставка
+                    </label><br />
+                    <button type="button" id="button">Рассчитать результат</button><br />
+                    <div class="row col-12 mb-3"><span id="out">0.0</span> <span class="rub">₽</span></div>
+                </form>
+            </div>
         <nav class="d-flex flex-row">
             <div class="navigation col-md-12 px-md-5 mx-auto my-2">
                 <div class="d-flex flex-column flex-md-row p-2 justify-content-between">
